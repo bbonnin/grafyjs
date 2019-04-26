@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Grafyjs</title>
+        <script src="dist/grafy.min.js"></script>
+    </head>
+    <body>
+        <canvas id="grafy"></canvas>
+
+        <script type="text/javascript">
+            grafy.setup('grafy');
+            grafy.size(400, 400);
+            grafy.background(0, 0, 0);
+            
+            grafy.stroke(255, 0, 0);
+            grafy.point(grafy.width * 0.5, grafy.height * 0.25);
+            grafy.stroke(0, 255, 0);
+            grafy.point(grafy.width * 0.25, grafy.height * 0.25);
+            grafy.stroke(0, 0, 255);
+            grafy.point(grafy.width * 0.5, grafy.height * 0.5);
+        </script>
+    </body>
+</html>
